@@ -4,8 +4,8 @@ dotenv.config();
 import express from "express";
 import db from "./database/database";
 
-const indexRouter = require("./routes/index");
-const paymentRouter = require("./routes/payment");
+import indexRouter from "./routes/index";
+import paymentRouter from "./routes/payment";
 
 const PORT = process.env.PORT || 3000;
 const app = express();
