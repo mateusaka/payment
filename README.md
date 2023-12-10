@@ -17,7 +17,7 @@ PORT=
 DB_URL=
 ```
 
-To test locally
+To test locally.
 
 ```sh
 npm run dev
@@ -37,11 +37,11 @@ npm run dev
 }
 ```
 
-"payer" changed to "sender" and "payee" changed to "receiver"
+"payer" changed to "sender" and "payee" changed to "receiver".
 
 ## Build
 
-To build and host on any platform
+To build and host on any platform.
 
 ```sh
 npm run build
