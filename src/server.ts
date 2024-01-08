@@ -17,6 +17,6 @@ app.use("/payment", paymentRouter);
 
 app.listen(PORT, () => {
     console.log("Server is up!");
-
+    
     db.connect();
 });
