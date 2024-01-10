@@ -25,7 +25,7 @@ class UserController {
             });
 
             if(selectedUser) {
-                res.send("Document or email already exists.");
+                return res.send("Document or email already exists.");
             }
 
             const user = new User({
