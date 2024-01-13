@@ -11,13 +11,17 @@ class TransactionController {
         try {
             const { value, sender, receiver } = req.body;
 
+            if (!Number.isFinite(value)) {
+                return res.send("Error: Invalid value type. Value must be a number.");
+            }
+
             await TransactionService.createTransaction(new Transaction({
                 value,
                 sender,
                 receiver
             }));
 
-            res.send("Success");
+            res.send("Success.");
         } catch (error: any) {
             res.send(error.message);
         }

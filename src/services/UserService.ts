@@ -48,7 +48,7 @@ class UserService {
             throw new Error("User has no balance.");
         }
 
-        if(bigValue.lt(0)) {
+        if(bigValue.lte(0)) {
             throw new Error("Invalid value.");
         }
     }
